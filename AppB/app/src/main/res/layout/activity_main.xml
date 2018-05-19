@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appb.appb.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/noticia_dia_app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/noticia_foto_dia_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/androidfast"></ImageView>
+
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="↓↓↓ Tu celular esta muy lento? ↓↓↓"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <Button
+            android:id="@+id/activity_main_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="onClick"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Click para descargar mas RAM"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="↑↑↑ Tu celular esta muy lento? ↑↑↑"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
